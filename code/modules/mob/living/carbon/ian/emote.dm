@@ -1,0 +1,21 @@
+/mob/living/carbon/ian
+	default_emotes = list(
+		/datum/emote/list,
+		/datum/emote/pray,
+		/datum/emote/blink,
+		/datum/emote/whimper,
+		/datum/emote/moan,
+		/datum/emote/roar,
+		/datum/emote/gasp,
+		/datum/emote/choke,
+		/datum/emote/cough,
+		/datum/emote/drool,
+		/datum/emote/eyebrow,
+		/datum/emote/nod,
+		/datum/emote/shake,
+		/datum/emote/twitch,
+		/datum/emote/collapse,
+		/datum/emote/faint,
+		/datum/emote/deathgasp,
+		/datum/emote/dance,
+	)
