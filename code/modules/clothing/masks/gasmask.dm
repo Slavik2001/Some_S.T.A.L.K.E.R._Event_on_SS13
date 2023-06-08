@@ -267,8 +267,3 @@
 	name = "German Gas Mask"
 	desc = "Soldier's black gas mask."
 	icon_state = "German_gasmask"
-
-/obj/item/clothing/mask/gas/gas_mask
-	name = "Gas Mask"
-	desc = "Soldier's black gas mask."
-	icon_state = "gasmask"
