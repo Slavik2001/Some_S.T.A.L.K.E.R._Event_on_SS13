@@ -40,6 +40,11 @@
 	icon_state = "rosas_hat"
 	item_state = "helmet"
 
+/obj/item/clothing/head/beret/desert
+	name = "desert beret"
+	icon_state = "beret_desert"
+	item_state = "helmet"
+
 // Security
 
 /obj/item/clothing/head/beret/sec
