@@ -1058,7 +1058,7 @@ var/global/list/airlock_overlays = list()
 	if(inner_material == "glass")
 		optionlist = list("Public", "Public2", "Engineering", "Atmospherics", "Security", "Command", "Medical", "Research", "Mining", "Maintenance")
 	else
-		optionlist = list("Public", "Engineering", "Atmospherics", "Security", "Command", "Medical", "Research", "Mining", "Maintenance", "External", "High Security")
+		optionlist = list("Public", "Engineering", "Atmospherics", "Security", "Command", "Medical", "Research", "Mining", "Maintenance", "External", "High Security", "Red", "Blue", "Yellow", "Grey", "Rainbow", "Fresh")
 
 	var/paintjob = input(user, "Please select a paintjob for this airlock.") in optionlist
 	if(!W.use_tool(src, user, 50, 1))
@@ -1101,6 +1101,24 @@ var/global/list/airlock_overlays = list()
 		if("High Security")
 			icon          = 'icons/obj/doors/airlocks/highsec/highsec.dmi'
 			overlays_file = 'icons/obj/doors/airlocks/highsec/overlays.dmi'
+		if("Red")
+			icon          = 'icons/obj/doors/airlocks/stalker/red.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+		if("Blue")
+			icon          = 'icons/obj/doors/airlocks/stalker/blue.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+		if("Yellow")
+			icon          = 'icons/obj/doors/airlocks/stalker/yellow.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+		if("Grey")
+			icon          = 'icons/obj/doors/airlocks/stalker/grey.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+		if("Fresh")
+			icon          = 'icons/obj/doors/airlocks/stalker/fresh.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+		if("Rainbow")
+			icon          = 'icons/obj/doors/airlocks/stalker/rainbow.dmi'
+			overlays_file = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
 	update_icon()
 
 /obj/machinery/door/airlock/proc/on_break()

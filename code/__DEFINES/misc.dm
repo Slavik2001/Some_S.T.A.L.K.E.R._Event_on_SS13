@@ -363,6 +363,12 @@
 		/obj/machinery/door/airlock/science/glass, \
 		/obj/machinery/door/airlock/science/neutral, \
 		/obj/machinery/door/airlock/maintenance_hatch, \
+		/obj/machinery/door/airlock/red, \
+		/obj/machinery/door/airlock/blue, \
+		/obj/machinery/door/airlock/yellow, \
+		/obj/machinery/door/airlock/grey, \
+		/obj/machinery/door/airlock/rainbow, \
+		/obj/machinery/door/airlock/fresh, \
 )
 
 #define SMOOTH_ADAPTERS_WALLS list( \

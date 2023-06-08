@@ -66,6 +66,42 @@
 
 	assembly_type = /obj/structure/door_assembly/door_assembly_neutral
 
+/obj/machinery/door/airlock/red
+	icon = 'icons/obj/doors/airlocks/stalker/red.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_red
+
+/obj/machinery/door/airlock/blue
+	icon = 'icons/obj/doors/airlocks/stalker/blue.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_blue
+
+/obj/machinery/door/airlock/yellow
+	icon = 'icons/obj/doors/airlocks/stalker/yellow.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_yellow
+
+/obj/machinery/door/airlock/grey
+	icon = 'icons/obj/doors/airlocks/stalker/grey.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_grey
+
+/obj/machinery/door/airlock/fresh
+	icon = 'icons/obj/doors/airlocks/stalker/fresh.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_fresh
+
+/obj/machinery/door/airlock/rainbow
+	icon = 'icons/obj/doors/airlocks/stalker/rainbow.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+
+	assembly_type = /obj/structure/door_assembly/door_assembly_rainbow
+
 
 /***********************
 * Station airlocks glass

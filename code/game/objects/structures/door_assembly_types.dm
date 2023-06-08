@@ -112,3 +112,45 @@
 	icon             = 'icons/obj/doors/airlocks/station/neutral.dmi'
 	airlock_type     = /obj/machinery/door/airlock/neutral
 	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_red
+	name             = "red airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/red.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/red
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_blue
+	name             = "blue airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/blue.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/blue
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_yellow
+	name             = "yellow airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/yellow.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/yellow
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_grey
+	name             = "grey airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/grey.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/grey
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_fresh
+	name             = "fresh airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/fresh.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/fresh
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/door_assembly_rainbow
+	name             = "rainbow airlock assembly"
+	icon             = 'icons/obj/doors/airlocks/stalker/rainbow.dmi'
+	overlays_file    = 'icons/obj/doors/airlocks/stalker/overlays.dmi'
+	airlock_type     = /obj/machinery/door/airlock/rainbow
+	can_insert_glass = FALSE
