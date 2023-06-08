@@ -264,6 +264,16 @@
 	species_restricted = list(VOX , VOX_ARMALIS)
 
 /obj/item/clothing/mask/gas/German
+	name = "Black gas mask"
+	desc = "Black gas mask."
+	icon_state = "German_gasmask"
+
+/obj/item/clothing/mask/gas/black
 	name = "German Gas Mask"
 	desc = "Soldier's black gas mask."
-	icon_state = "German_gasmask"
+	icon_state = "defmask"
+
+/obj/item/clothing/mask/gas/black_e
+	name = "Black gas mask"
+	desc = "Black gas mask without filter."
+	icon_state = "defmask_e"

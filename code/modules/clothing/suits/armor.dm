@@ -430,3 +430,42 @@
 	armor = list(melee = 40, bullet = 5, laser = 40, energy = 25, bomb = 0, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.4
+
+/obj/item/clothing/suit/armor/desert
+	name = "desert coat"
+	desc = "Desert."
+	icon_state = "desert_coat"
+	item_state = "desert_coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	pierce_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	armor = list(melee = 40, bullet = 45, laser = 45, energy = 50, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.6
+
+/obj/item/clothing/suit/armor/black
+	name = "black coat"
+	desc = "Desert."
+	icon_state = "black_coat"
+	item_state = "black_coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	pierce_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	armor = list(melee = 40, bullet = 45, laser = 45, energy = 50, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.6
+
+/obj/item/clothing/suit/armor/black2
+	name = "black coat"
+	desc = "Desert."
+	icon_state = "black2_coat"
+	item_state = "black2_coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	pierce_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	armor = list(melee = 40, bullet = 45, laser = 45, energy = 50, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.6

@@ -131,3 +131,27 @@
 	desc = "darkred"
 	icon_state = "darkred"
 	flags = ONESIZEFITSALL
+
+/obj/item/clothing/under/desert
+	name = "desert"
+	desc = "desert"
+	icon_state = "desert"
+	item_state = "desert"
+
+/obj/item/clothing/under/alko
+	name = "alko"
+	desc = "alko"
+	icon_state = "alko"
+	item_state = "alko"
+
+/obj/item/clothing/under/military
+	name = "military"
+	desc = "military"
+	icon_state = "military"
+	item_state = "military"
+
+/obj/item/clothing/under/black_t_shirt
+	name = "black t-shirt"
+	desc = "black t-shirt"
+	icon_state = "black_t_shirt"
+	item_state = "black_t_shirt"
