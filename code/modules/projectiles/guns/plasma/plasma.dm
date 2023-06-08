@@ -36,6 +36,69 @@
 	var/number_of_shots = 25 // with 20000 battery
 	var/max_projectile_per_fire = 1 // this is amount of pellets at 100% used energy required to shoot, incase of spread guns like shotguns.
 
+/obj/item/weapon/gun/plasma/plasma_pistol
+	name = "plasma pistol"
+	desc = "plasma pistol."
+	icon_state = "plasma_pistol"
+	item_state = "plasma_pistol"
+	fire_delay = 5
+	w_class = SIZE_SMALL
+	origin_tech = "combat=3;magnets=2"
+	fire_sound = 'sound/weapons/guns/plasma10_overcharge_massive_shot.ogg'
+	recoil = FALSE
+	can_be_holstered = TRUE
+	two_hand_weapon = FALSE
+	number_of_shots = 12
+
+	overcharge_fire_sound = 'sound/weapons/guns/plasma10_overcharge_shot.ogg'
+
+	ammo_type = list(
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge
+		)
+
+/obj/item/weapon/gun/plasma/plasma_rifle
+	name = "plasma rifle"
+	desc = "plasma rifle."
+	icon_state = "plasma_rifle"
+	item_state = "plasma_rifle"
+	fire_delay = 10
+	w_class = SIZE_NORMAL
+	origin_tech = "combat=3;magnets=2"
+	fire_sound = 'sound/weapons/guns/plasma10_overcharge_massive_shot.ogg'
+	recoil = FALSE
+	can_be_holstered = FALSE
+	two_hand_weapon = ONLY_TWOHAND
+	number_of_shots = 20
+
+	overcharge_fire_sound = 'sound/weapons/guns/plasma10_overcharge_shot.ogg'
+
+	ammo_type = list(
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge
+		)
+
+/obj/item/weapon/gun/plasma/plasma_sniper
+	name = "plasma sniper rifle"
+	desc = "plasma sniper rifle."
+	icon_state = "plasma_sniper"
+	item_state = "plasma_sniper"
+	fire_delay = 20
+	w_class = SIZE_NORMAL
+	origin_tech = "combat=3;magnets=2"
+	fire_sound = 'sound/weapons/guns/plasma10_overcharge_massive_shot.ogg'
+	recoil = FALSE
+	can_be_holstered = FALSE
+	two_hand_weapon = ONLY_TWOHAND
+	number_of_shots = 10
+
+	overcharge_fire_sound = 'sound/weapons/guns/gunpulse.ogg'
+
+	ammo_type = list(
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma/overcharge,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge/massive
+		)
+
 /obj/item/weapon/gun/plasma/p104sass
 	name = "plasma 104-sass" // its actually 10/4. 10 - because its based in some technical aspects of carbine and even shoots the same projectiles. 4 - stands for prototype number.
 	desc = "A plasma-based semi-automatic short shotgun."

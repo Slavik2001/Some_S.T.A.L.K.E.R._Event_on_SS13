@@ -158,6 +158,16 @@
 	multiple_sprites = MANY_STATES
 	overlay = "stechkin-mag"
 
+/obj/item/ammo_box/magazine/pm
+	name = "magazine (9mm)"
+	icon_state = "pm_mag"
+	origin_tech = "combat=2"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	caliber = "9mm"
+	max_ammo = 7
+	multiple_sprites = MANY_STATES
+	overlay = "pm-mag"
+
 /obj/item/ammo_box/magazine/stechkin/extended
 	name = "extended capacity magazine (9mm)"
 	icon_state = "stechkin_mag_extended"
@@ -440,6 +450,16 @@
 	max_ammo = 30
 	multiple_sprites = TWO_STATES
 	overlay = "a74-mag"
+
+/obj/item/ammo_box/magazine/a74/a47
+	name = "A47 magazine (7.74mm)"
+	icon_state = "a47_mag"
+	origin_tech = "combat=3"
+	ammo_type = /obj/item/ammo_casing/a47
+	caliber = "7.74mm"
+	max_ammo = 5
+	multiple_sprites = TWO_STATES
+	overlay = "a47-mag"
 
 /obj/item/ammo_box/magazine/a74/krinkov
 	name = "small A74 magazine (7.74)"

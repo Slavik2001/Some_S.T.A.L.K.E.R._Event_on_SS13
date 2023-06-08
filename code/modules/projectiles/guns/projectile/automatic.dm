@@ -214,6 +214,18 @@
 	origin_tech = "combat=5;materials=4;syndicate=6"
 	fire_sound = 'sound/weapons/guns/gunshot_ak74.ogg'
 
+/obj/item/weapon/gun/projectile/automatic/a47
+	name = "A47 assault rifle"
+	desc = "A47 assault rifle"
+	initial_mag = /obj/item/ammo_box/magazine/a74/a47
+	suitable_mags = list(/obj/item/ammo_box/magazine/a74/a47)
+	w_class = SIZE_SMALL
+	two_hand_weapon = DESIRABLE_TWOHAND
+	icon_state = "a47"
+	item_state = "a47"
+	origin_tech = "combat=5;materials=4;syndicate=6"
+	fire_sound = 'sound/weapons/guns/gunshot_ak74.ogg'
+
 /obj/item/weapon/gun/projectile/automatic/a74/krinkov
 	name = "Krinkov"
 	desc = "Small and deadly, A74U is lighter than it's older brother, but nontheless packs a serious punch."

@@ -66,6 +66,19 @@
 	suitable_mags = list(/obj/item/ammo_box/magazine/stechkin, /obj/item/ammo_box/magazine/stechkin/extended)
 	can_be_silenced = TRUE
 
+/obj/item/weapon/gun/projectile/automatic/pistol/pm
+	name = "PM"
+	desc = "PM."
+	icon_state = "pm"
+	item_state = "pm"
+	w_class = SIZE_TINY
+	silenced = FALSE
+	origin_tech = "combat=2;materials=2;syndicate=2"
+	can_be_holstered = TRUE
+	initial_mag = /obj/item/ammo_box/magazine/pm
+	suitable_mags = list(/obj/item/ammo_box/magazine/pm, /obj/item/ammo_box/magazine/stechkin/extended)
+	can_be_silenced = TRUE
+
 /obj/item/weapon/gun/projectile/automatic/colt1911
 	desc = "A cheap Martian knock-off of a Colt M1911. Uses less-than-lethal .45 rounds."
 	name = "Colt M1911"

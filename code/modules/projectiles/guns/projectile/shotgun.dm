@@ -173,6 +173,12 @@
 	can_be_holstered = TRUE
 	short = TRUE
 
+/obj/item/weapon/gun/projectile/revolver/doublebarrel/dstalker
+	name = "double-barreled shotgun"
+	desc = "double-barreled shotgun."
+	icon_state = "dshotgun_stalker"
+	item_state = "dshotgun_stalker"
+
 /obj/item/weapon/gun/projectile/shotgun/repeater
 	name = "repeater rifle"
 	desc = "Winchester Model 1894."
@@ -190,6 +196,17 @@
 	desc = "Produced by the same group of shady space-soviet people that scrapped together A74 for Gorlex Marauders, this ancient bolt-action rifle uses same 7.74 ammo in clips and is perfectly fit to arm human waves in the name of Revolution."
 	icon_state = "bolt-action"
 	item_state = "bolt-action"
+	origin_tech = "combat=5;materials=2"
+	initial_mag = /obj/item/ammo_box/magazine/a774clip
+	w_class = SIZE_BIG
+	slot_flags = SLOT_FLAGS_BACK
+	pump_sound = list('sound/weapons/guns/reload_bolt.ogg')
+
+/obj/item/weapon/gun/projectile/shotgun/bolt_action/mosin
+	name = "Mosin"
+	desc = "Mosin."
+	icon_state = "mosin"
+	item_state = "mosin"
 	origin_tech = "combat=5;materials=2"
 	initial_mag = /obj/item/ammo_box/magazine/a774clip
 	w_class = SIZE_BIG
