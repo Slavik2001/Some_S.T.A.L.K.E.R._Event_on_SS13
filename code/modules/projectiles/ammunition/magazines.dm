@@ -538,6 +538,14 @@
 /obj/item/ammo_box/magazine/plasma/emp_act() // just incase if someone adds emp_act in parent.
 	return
 
+/obj/item/ammo_box/magazine/plasma/pistol_magazine
+	name = "plasma pistol battery pack"
+	desc = "A special battery case with protection against EM pulse. Uses fast charge method. Has standardized dimensions and can be used with any plasma type gun of this series. Power cell can be replaced."
+	icon_state = "plasma_pistol_mag"
+	multiple_sprites = TWO_STATES
+	overlay = "plasma_pistol_mag"
+	caliber = "small plasma"
+
 /obj/item/ammo_box/magazine/drozd
 	name = "Drozd magazine (12.7mm)"
 	icon_state = "drozd_mag"

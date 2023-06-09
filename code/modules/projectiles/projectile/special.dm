@@ -273,6 +273,12 @@
 	. = ..()
 	proj_act_sound = SOUNDIN_LASERACT
 
+/obj/item/projectile/plasma/pistol
+	damage = 20
+
+/obj/item/projectile/plasma/rifle
+	damage = 30
+
 /obj/item/projectile/plasma/overcharge
 	icon_state = "plasma_bolt_oc"
 	light_color = LIGHT_COLOR_PLASMA_OC
@@ -280,6 +286,17 @@
 	impact_force = 1
 
 	muzzle_type = /obj/effect/projectile/plasma/muzzle/overcharge
+
+/obj/item/projectile/plasma/overcharge/pistol
+	damage = 30
+	impact_force = 0
+
+/obj/item/projectile/plasma/overcharge/rifle
+	damage = 45
+
+/obj/item/projectile/plasma/overcharge/sniper
+	damage = 50
+	step_delay = 0.5
 
 /obj/item/projectile/plasma/overcharge/massive
 	icon_state = "plasma_massive_oc"
@@ -290,6 +307,9 @@
 	proj_impact_sound = 'sound/weapons/guns/plasma10_hit.ogg'
 
 	impact_type = /obj/effect/projectile/plasma/impact/overcharge
+
+/obj/item/projectile/plasma/overcharge/massive/sniper
+	step_delay = 1
 
 /obj/item/projectile/pyrometer
 	name = "laser"

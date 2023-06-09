@@ -330,3 +330,13 @@
 
 	heat_protection = HEAD
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/tehno_helmet
+	name = "tehno helmet"
+	desc = "Tehnohelmet."
+	icon_state = "tehno_helmet"
+	item_state = "tehno_helmet"
+	armor = list(melee = 70, bullet = 60, laser = 50, energy = 45, bomb = 0, bio = 0, rad = 0)
+	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+

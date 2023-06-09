@@ -155,3 +155,27 @@
 	desc = "black t-shirt"
 	icon_state = "black_t_shirt"
 	item_state = "black_t_shirt"
+
+/obj/item/clothing/under/field_medic
+	name = "field_medic"
+	desc = "field_medic"
+	icon_state = "field_medic"
+	item_state = "field_medic"
+
+/obj/item/clothing/under/fallout
+	name = "fallout"
+	desc = "fallout"
+	icon_state = "fallout"
+	item_state = "fallout"
+
+/obj/item/clothing/under/tehno_officer
+	name = "tehno_officer"
+	desc = "tehno_officer"
+	icon_state = "tehno_officer"
+	item_state = "tehno_officer"
+
+/obj/item/clothing/under/black_overalls
+	name = "black_overalls"
+	desc = "black_overalls"
+	icon_state = "black_overalls"
+	item_state = "black_overalls"

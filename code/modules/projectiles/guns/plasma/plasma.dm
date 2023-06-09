@@ -53,9 +53,11 @@
 	overcharge_fire_sound = 'sound/weapons/guns/plasma10_overcharge_shot.ogg'
 
 	ammo_type = list(
-		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma,
-		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma/pistol,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge/pistol
 		)
+
+	initial_mag = /obj/item/ammo_box/magazine/plasma/pistol_magazine
 
 /obj/item/weapon/gun/plasma/plasma_rifle
 	name = "plasma rifle"
@@ -74,8 +76,8 @@
 	overcharge_fire_sound = 'sound/weapons/guns/plasma10_overcharge_shot.ogg'
 
 	ammo_type = list(
-		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma,
-		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma/rifle,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge/rifle
 		)
 
 /obj/item/weapon/gun/plasma/plasma_sniper
@@ -95,9 +97,17 @@
 	overcharge_fire_sound = 'sound/weapons/guns/gunpulse.ogg'
 
 	ammo_type = list(
-		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma/overcharge,
-		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge/massive
+		PLASMAGUN_NORMAL_TYPE     = /obj/item/ammo_casing/plasma/overcharge/sniper,
+		PLASMAGUN_OVERCHARGE_TYPE = /obj/item/ammo_casing/plasma/overcharge/massive/sniper
 		)
+
+/obj/item/weapon/gun/plasma/plasma_sniper/atom_init()
+	. = ..()
+	update_icon()
+	AddComponent(/datum/component/zoom, 12)
+
+/obj/item/weapon/gun/energy/sniperrifle/attack_self(mob/user)
+	SEND_SIGNAL(src, COMSIG_ZOOM_TOGGLE, user)
 
 /obj/item/weapon/gun/plasma/p104sass
 	name = "plasma 104-sass" // its actually 10/4. 10 - because its based in some technical aspects of carbine and even shoots the same projectiles. 4 - stands for prototype number.

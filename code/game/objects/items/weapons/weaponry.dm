@@ -66,6 +66,20 @@
 /obj/item/weapon/katana/Get_shield_chance()
 		return 50
 
+/obj/item/weapon/machete
+	name = "machete"
+	desc = "machete."
+	icon_state = "machete"
+	item_state = "machete"
+	hitsound = list('sound/weapons/bladeslice.ogg')
+	flags = CONDUCT
+	force = 20
+	throwforce = 10
+	sharp = 1
+	edge = 1
+	w_class = SIZE_SMALL
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
 /obj/item/weapon/harpoon
 	name = "harpoon"
 	sharp = 1

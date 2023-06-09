@@ -47,11 +47,30 @@
 	caliber = "plasma"
 	projectile_type = /obj/item/projectile/plasma
 
+/obj/item/ammo_casing/plasma/pistol
+	name = "small plasma"
+	projectile_type = /obj/item/projectile/plasma/pistol
+
+/obj/item/ammo_casing/plasma/rifle
+	projectile_type = /obj/item/projectile/plasma/rifle
+
 /obj/item/ammo_casing/plasma/overcharge
 	projectile_type = /obj/item/projectile/plasma/overcharge
 
+/obj/item/ammo_casing/plasma/overcharge/pistol
+	projectile_type = /obj/item/projectile/plasma/overcharge/pistol
+
+/obj/item/ammo_casing/plasma/overcharge/rifle
+	projectile_type = /obj/item/projectile/plasma/overcharge/rifle
+
+/obj/item/ammo_casing/plasma/overcharge/sniper
+	projectile_type = /obj/item/projectile/plasma/overcharge/sniper
+
 /obj/item/ammo_casing/plasma/overcharge/massive
 	projectile_type = /obj/item/projectile/plasma/overcharge/massive
+
+/obj/item/ammo_casing/plasma/overcharge/massive/sniper
+	projectile_type = /obj/item/projectile/plasma/overcharge/massive/sniper
 
 /obj/item/ammo_casing/energy/wormhole
 	projectile_type = /obj/item/projectile/beam/wormhole
