@@ -72,6 +72,7 @@
 	can_be_holstered = FALSE
 	two_hand_weapon = ONLY_TWOHAND
 	number_of_shots = 20
+	slot_flags = SLOT_FLAGS_BELT|SLOT_FLAGS_BACK
 
 	overcharge_fire_sound = 'sound/weapons/guns/plasma10_overcharge_shot.ogg'
 
@@ -93,6 +94,7 @@
 	can_be_holstered = FALSE
 	two_hand_weapon = ONLY_TWOHAND
 	number_of_shots = 10
+	slot_flags = SLOT_FLAGS_BELT|SLOT_FLAGS_BACK
 
 	overcharge_fire_sound = 'sound/weapons/guns/gunpulse.ogg'
 
