@@ -470,15 +470,28 @@
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/suit/armor/tehno_heavy_armor
+	name = "tehno heavy armor"
+	desc = "Tehno heavy armor."
+	icon_state = "tehno_heavy_armor"
+	item_state = "tehno_heavy_armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	pierce_protection = UPPER_TORSO|LOWER_TORSO
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	armor = list(melee = 50, bullet = 60, laser = 50, energy = 45, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.6
+
 /obj/item/clothing/suit/armor/tehno_armor
 	name = "tehno_armor"
 	desc = "tehno_armor."
 	icon_state = "tehno_armor"
 	item_state = "tehno_armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	pierce_protection = UPPER_TORSO|LOWER_TORSO
-	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 70, bullet = 60, laser = 50, energy = 45, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 0, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6

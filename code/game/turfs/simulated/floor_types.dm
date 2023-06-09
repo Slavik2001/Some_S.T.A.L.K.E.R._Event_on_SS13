@@ -124,6 +124,10 @@
 	. = ..()
 	name = "plating"
 
+/turf/simulated/floor/stalker
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "stalker"
+
 /turf/simulated/floor/bluegrid
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "bcircuit"

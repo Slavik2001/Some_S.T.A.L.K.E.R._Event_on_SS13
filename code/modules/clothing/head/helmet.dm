@@ -333,10 +333,17 @@
 
 /obj/item/clothing/head/helmet/tehno_helmet
 	name = "tehno helmet"
-	desc = "Tehnohelmet."
+	desc = "Tehno helmet."
 	icon_state = "tehno_helmet"
 	item_state = "tehno_helmet"
-	armor = list(melee = 70, bullet = 60, laser = 50, energy = 45, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 60, laser = 50, energy = 45, bomb = 0, bio = 0, rad = 0)
 	flags = HEADCOVERSEYES|HEADCOVERSMOUTH|BLOCKHAIR
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
 
+/obj/item/clothing/head/helmet/tehno_beret
+	name = "tehno beret"
+	desc = "Tehno beret."
+	icon_state = "tehno_beret"
+	item_state = "tehno_beret"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 0, bio = 0, rad = 0)
+	flags = BLOCKHAIR

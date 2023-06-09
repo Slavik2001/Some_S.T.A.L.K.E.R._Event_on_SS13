@@ -29,6 +29,14 @@
 	permeability_coefficient = 0.01
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 25, rad = 0)
 
+/obj/item/clothing/mask/stalker
+	name = "mask"
+	desc = "Mask."
+	icon_state = "stalker"
+	item_state = "stalker"
+	w_class = SIZE_TINY
+	flags = MASKCOVERSMOUTH
+
 /obj/item/clothing/mask/fakemoustache
 	name = "fake moustache"
 	desc = "Warning: moustache is fake."

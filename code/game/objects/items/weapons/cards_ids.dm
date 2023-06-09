@@ -535,3 +535,37 @@
 	rank = "Senior Medic"
 	assignment = "Senior Medic"
 	access = list(access_oldstation, access_engine, access_engine_equip, access_medical, access_surgery, access_research, access_tox, access_robotics)
+
+/obj/item/weapon/card/id/red_key
+	name = "Red key"
+	desc = "Ключ с красной пластиковой биркой."
+	icon_state = "red_key"
+	item_state = "red_key"
+	access = null
+
+/obj/item/weapon/card/id/blue_key
+	name = "blue key"
+	desc = "Ключ с синей пластиковой биркой."
+	icon_state = "blue_key"
+	item_state = "blue_key"
+	access = null
+
+/obj/item/weapon/card/id/yellow_key
+	name = "yellow key"
+	desc = "Ключ с желтой пластиковой биркой."
+	icon_state = "yellow_key"
+	item_state = "yellow_key"
+	access = null
+
+/obj/item/weapon/card/id/grey_key
+	name = "Grey key"
+	desc = "Ключ с серой пластиковой биркой."
+	icon_state = "grey_key"
+	item_state = "grey_key"
+	access = null
+
+/obj/item/weapon/card/emag/emag_key
+	name = "Master key"
+	desc = "Ключ странной формы и с разноцветной пластиковой биркой."
+	icon_state = "emag_key"
+	item_state = "emag_key"
