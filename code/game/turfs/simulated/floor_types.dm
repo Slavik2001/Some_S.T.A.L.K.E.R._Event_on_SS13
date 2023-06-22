@@ -140,7 +140,6 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "gcircuit"
 
-
 /turf/simulated/shuttle
 	name = "shuttle"
 	icon = 'icons/turf/shuttle.dmi'

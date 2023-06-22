@@ -226,6 +226,12 @@
 	origin_tech = "combat=5;materials=4;syndicate=6"
 	fire_sound = 'sound/weapons/guns/gunshot_ak74.ogg'
 
+/obj/item/weapon/gun/projectile/automatic/m6
+	name = "M6"
+	desc = "M6"
+	icon = 'icons/obj/gun_64x64.dmi'
+	icon_state = "m6"
+
 /obj/item/weapon/gun/projectile/automatic/a74/krinkov
 	name = "Krinkov"
 	desc = "Small and deadly, A74U is lighter than it's older brother, but nontheless packs a serious punch."

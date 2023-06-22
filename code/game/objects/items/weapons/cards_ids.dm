@@ -536,33 +536,42 @@
 	assignment = "Senior Medic"
 	access = list(access_oldstation, access_engine, access_engine_equip, access_medical, access_surgery, access_research, access_tox, access_robotics)
 
-/obj/item/weapon/card/id/red_key
+/obj/item/weapon/card/id/keys
+
+/obj/item/weapon/card/id/keys/red_key
 	name = "Red key"
 	desc = "Ключ с красной пластиковой биркой."
 	icon_state = "red_key"
 	item_state = "red_key"
-	access = null
+	access = list(access_stalker_red)
 
-/obj/item/weapon/card/id/blue_key
-	name = "blue key"
+/obj/item/weapon/card/id/keys/blue_key
+	name = "Blue key"
 	desc = "Ключ с синей пластиковой биркой."
 	icon_state = "blue_key"
 	item_state = "blue_key"
-	access = null
+	access = list(access_stalker_blue)
 
-/obj/item/weapon/card/id/yellow_key
-	name = "yellow key"
+/obj/item/weapon/card/id/keys/yellow_key
+	name = "Yellow key"
 	desc = "Ключ с желтой пластиковой биркой."
 	icon_state = "yellow_key"
 	item_state = "yellow_key"
-	access = null
+	access = list(access_stalker_yellow)
 
-/obj/item/weapon/card/id/grey_key
+/obj/item/weapon/card/id/keys/grey_key
 	name = "Grey key"
 	desc = "Ключ с серой пластиковой биркой."
 	icon_state = "grey_key"
 	item_state = "grey_key"
-	access = null
+	access = list(access_stalker_grey)
+
+/obj/item/weapon/card/id/keys/rainbow_key
+	name = "Rainbow key"
+	desc = "Ключ с разноцветной пластиковой биркой."
+	icon_state = "emag_key"
+	item_state = "emag_key"
+	access = list(access_stalker_rainbow)
 
 /obj/item/weapon/card/emag/emag_key
 	name = "Master key"

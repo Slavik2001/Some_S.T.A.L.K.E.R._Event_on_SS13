@@ -37,6 +37,7 @@ var/global/list/datum/stack_recipe/metal_recipes = list (
 		), 2),
 	null,
 	new/datum/stack_recipe("table parts", /obj/item/weapon/table_parts, 2),
+	new/datum/stack_recipe("black table parts", /obj/item/weapon/table_parts/stalker, 2),
 	new/datum/stack_recipe("rack parts", /obj/item/weapon/rack_parts),
 	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE,  required_skills = list(/datum/skill/construction = SKILL_LEVEL_NOVICE)),
 	null,
@@ -88,6 +89,14 @@ var/global/list/datum/stack_recipe/metal_recipes = list (
 	new/datum/stack_recipe("metal picture frame", /obj/item/weapon/picture_frame/metal, 1, time = 15),
 	null,
 	new/datum/stack_recipe("metal door", /obj/structure/mineral_door/metal, 20, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+	new/datum/stack_recipe_list("old doors", list(
+		new/datum/stack_recipe("red door", /obj/structure/mineral_door/stalker/red, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		new/datum/stack_recipe("blue door", /obj/structure/mineral_door/stalker/blue, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		new/datum/stack_recipe("yellow door", /obj/structure/mineral_door/stalker/yellow, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		new/datum/stack_recipe("grey door", /obj/structure/mineral_door/stalker/grey, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		new/datum/stack_recipe("red-white door", /obj/structure/mineral_door/stalker/fresh, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		new/datum/stack_recipe("rainbow door", /obj/structure/mineral_door/stalker/rainbow, 10, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED)),
+		), 10),
 	new/datum/stack_recipe("windowsill", /obj/structure/windowsill, 2, one_per_turf = TRUE, on_floor = TRUE, required_skills = list(/datum/skill/construction = SKILL_LEVEL_TRAINED), time = 20)
 )
 

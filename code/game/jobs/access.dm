@@ -92,6 +92,13 @@
 	//MONEY
 /var/const/access_crate_cash = 200
 
+	//Stalker
+/var/const/access_stalker_red = 300
+/var/const/access_stalker_blue = 301
+/var/const/access_stalker_yellow = 302
+/var/const/access_stalker_grey = 303
+/var/const/access_stalker_rainbow = 304
+
 /obj/var/list/req_access = list()
 /obj/var/list/req_one_access = list()
 

@@ -458,6 +458,11 @@
 		return ..()
 	shatter()
 
+/obj/structure/table/stalker
+	icon = 'icons/obj/smooth_structures/s_table.dmi'
+	icon_state = "s_box"
+	parts = /obj/item/weapon/table_parts/stalker
+
 /*
  * Wooden tables
  */
@@ -559,6 +564,12 @@
 		return
 
 	return ..()
+
+/obj/structure/table/reinforced/stalker
+	name = "Black reinforced table"
+	icon = 'icons/obj/smooth_structures/s_reinforced_table.dmi'
+	parts = /obj/item/weapon/table_parts/reinforced/stalker
+	canSmoothWith = list(/obj/structure/table/reinforced/stalker)
 
 /obj/lot_holder
 	name = "lot holder"

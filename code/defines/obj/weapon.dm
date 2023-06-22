@@ -349,6 +349,11 @@
 	max_integrity = 100
 	resistance_flags = CAN_BE_HIT
 
+/obj/item/weapon/table_parts/stalker
+	name = "Black table parts"
+	icon_state = "s_table_parts"
+	table_type = /obj/structure/table/stalker
+
 /obj/item/weapon/table_parts/reinforced
 	name = "reinforced table parts"
 	desc = "Hard table parts. Well...harder..."
@@ -358,6 +363,12 @@
 	flags = CONDUCT
 	table_type = /obj/structure/table/reinforced
 	debris = list(/obj/item/stack/sheet/metal, /obj/item/stack/rods)
+
+/obj/item/weapon/table_parts/reinforced/stalker
+	name = "Black reinforced table parts"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "s_reinf_tableparts"
+	table_type = /obj/structure/table/reinforced/stalker
 
 /obj/item/weapon/table_parts/stall
 	name = "stall table parts"
