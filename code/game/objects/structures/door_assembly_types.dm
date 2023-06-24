@@ -107,6 +107,27 @@
 	glass_only       = TRUE
 	can_insert_glass = FALSE
 
+/obj/structure/door_assembly/multi_tile/stalker
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi/multi_tile.dmi'
+	overlays_file = null
+	airlock_type  = /obj/machinery/door/airlock/multi_tile/metal/stalker
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/multi_tile/stalker2
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi2/multi_tile.dmi'
+	overlays_file = null
+	airlock_type  = /obj/machinery/door/airlock/multi_tile/metal/stalker2
+	can_insert_glass = FALSE
+
+/obj/structure/door_assembly/multi_tile/stalker3
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi3/multi_tile.dmi'
+	overlays_file = null
+	airlock_type  = /obj/machinery/door/airlock/multi_tile/metal/stalker3
+	can_insert_glass = FALSE
+
 /obj/structure/door_assembly/door_assembly_neutral
 	name             = "neutral airlock assembly"
 	icon             = 'icons/obj/doors/airlocks/station/neutral.dmi'
