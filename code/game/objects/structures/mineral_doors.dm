@@ -310,72 +310,84 @@
 /obj/structure/mineral_door/stalker
 	name = "Base"
 	var/locked = 0
-
-/obj/structure/mineral_door/stalker/Destroy()
-	closet_list -= src
-	return ..()
+	var/opened = 0
 
 /obj/structure/mineral_door/stalker/red
 	name = "Red door"
 	icon_state = "red"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list(access_stalker_red)
 
 /obj/structure/mineral_door/stalker/blue
 	name = "Blue door"
 	icon_state = "blue"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list(access_stalker_blue)
 
 /obj/structure/mineral_door/stalker/yellow
 	name = "Yellow door"
 	icon_state = "yellow"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list(access_stalker_yellow)
 
 /obj/structure/mineral_door/stalker/fresh
 	name = "Red-white door"
 	icon_state = "fresh"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list()
 
 /obj/structure/mineral_door/stalker/grey
 	name = "Grey door"
 	icon_state = "grey"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list(access_stalker_grey)
 
 /obj/structure/mineral_door/stalker/rainbow
 	name = "Rainbow door"
 	icon_state = "rainbow"
 	sheetType = /obj/item/stack/sheet/metal
 	operating_sound = 'sound/effects/doorcreaky.ogg'
-	req_access = list(access_stalker_rainbow)
 
 /obj/structure/mineral_door/stalker/attackby(obj/item/weapon/W, mob/user)
 	var/obj/item/weapon/card/id/keys/K = W
 	if(istype(K, /obj/item/weapon/card/id/keys) && close_state)
 		to_chat(user, "<span class='notice'>The door has been [locked ? null : "un"]locked by [user].</span>")
-		Lock()
-	if(!locked)
-		Unlock()
-		to_chat(user, "<span class='notice'>The door has been [locked ? null : "un"]locked by [user].</span>")
+		close()
 	else
 		to_chat(user, "<span class='notice'>You need close the door.</span>")
-
-/obj/structure/mineral_door/stalker/proc/Lock(mob/user)
-	locked = 1
-
-/obj/structure/mineral_door/stalker/proc/Unlock(mob/user)
-	locked = 0
-
-/obj/structure/mineral_door/stalker/Open(mob/user)
 	if(!locked)
-		to_chat(user, "<span class='notice'>The door locked.</span>")
-	else
-		. = ..()
+		open()
+		to_chat(user, "<span class='notice'>The door has been [locked ? null : "un"]locked by [user].</span>")
+
+
+/obj/structure/mineral_door/stalker/proc/can_close()
+	for(var/obj/structure/mineral_door/stalker/door in get_turf(src))
+		if(door != src)
+			return 0
+	return 1
+
+/obj/structure/mineral_door/stalker/proc/can_open()
+	if(src.locked)
+		return 0
+	return 1
+
+/obj/structure/mineral_door/stalker/proc/open()
+	if(src.opened)
+		return 0
+
+	if(!can_open())
+		return 0
+	src.opened = 1
+	src.locked = 0
+	density = FALSE
+	return 1
+
+/obj/structure/mineral_door/stalker/proc/close()
+	if(!src.opened)
+		return 0
+	if(!can_close())
+		return 0
+	src.opened = 0
+	src.locked = 1
+	density = TRUE
+	return 1

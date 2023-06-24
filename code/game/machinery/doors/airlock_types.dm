@@ -445,3 +445,24 @@
 	overlays_file = 'icons/obj/doors/airlocks/multi_tile2/overlays.dmi'
 
 	assembly_type = /obj/structure/door_assembly/multi_tile
+
+/obj/machinery/door/airlock/multi_tile/metal/stalker
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi/multi_tile.dmi'
+	overlays_file = null
+
+	assembly_type = /obj/structure/door_assembly/multi_tile/stalker
+
+/obj/machinery/door/airlock/multi_tile/metal/stalker2
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi2/multi_tile.dmi'
+	overlays_file = null
+
+	assembly_type = /obj/structure/door_assembly/multi_tile/stalker2
+
+/obj/machinery/door/airlock/multi_tile/metal/stalker3
+	name          = "metal mutitile airlock"
+	icon          = 'icons/obj/doors/airlocks/stalker_multi3/multi_tile.dmi'
+	overlays_file = null
+
+	assembly_type = /obj/structure/door_assembly/multi_tile/stalker3
